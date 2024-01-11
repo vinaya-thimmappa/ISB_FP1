@@ -139,7 +139,7 @@ with st.form("entry_form"):
             report = classification_report(ytest, labels) 
             st.subheader("Top Headlines")
             #st.markdown(f"<style>{tableCss}</style>", unsafe_allow_html=True)
-            st.write(headlines.processed_tweet.value_counts()[:10])
+            st.write(headlines.processed_headline.value_counts()[:10])
             st.subheader("Model Metrics")
             st.write("Accuracy_Score: ", accuracy)
             # Compute classification report
