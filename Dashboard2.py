@@ -18,7 +18,7 @@ st.title(pageTitle + " " + pageIcon)
 hdfc = yfin.Ticker("HDFCBANK.NS").history("max")
 hdfc["Date"] = hdfc.index
 
-final = pd.read_csv("data/FinalDataset.csv", encoding = 'latin1') # "data/car_data.csv"
+final = pd.read_csv("data/FinalDataset.csv", encoding = 'latin1')
 
 
 # ----- DROP DOWN VALUES FOR COMPANY TO SELECT FOR ANALYSIS ------
