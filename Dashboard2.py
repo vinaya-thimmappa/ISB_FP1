@@ -18,7 +18,7 @@ st.title(pageTitle + " " + pageIcon)
 hdfc = yfin.Ticker("HDFCBANK.NS").history("max")
 hdfc["Date"] = hdfc.index
 
-final = pd.read_csv("data/FinalDataset.csv", encoding = 'latin1')
+final = pd.read_csv("data/FinalDataset.csv", encoding = 'utf-8')
 
 
 # ----- DROP DOWN VALUES FOR COMPANY TO SELECT FOR ANALYSIS ------
@@ -132,9 +132,9 @@ with st.form("entry_form"):
               font-weight: bold;
             }
             """
-            headlines = pd.read_csv("data/FinalHeadlines.csv", encoding='latin1')
-            labels = pd.read_csv("data/labels.csv", encoding='latin1')
-            ytest = pd.read_csv("data/ytest.csv", encoding='latin1')
+            headlines = pd.read_csv("data/FinalHeadlines.csv", encoding='utf-8')
+            labels = pd.read_csv("data/labels.csv", encoding='utf-8')
+            ytest = pd.read_csv("data/ytest.csv", encoding='utf-8')
             accuracy = accuracy_score(ytest, labels)
             report = classification_report(ytest, labels) 
             st.subheader("Top Headlines")
@@ -172,9 +172,9 @@ with st.form("entry_form"):
             with col2:
                 st.subheader("Prescriptive Advice")
                 results = f''' 
-                * Basis the Intelligence Drawn from the ML Model and the Sentiment Analysis, We find that the Probable Range for the Market for **1 Day** is **554 – 587**.
-                * At the same time, the Price Range for the TAMO for **1 Week** is **535 – 609**.
-                * And the Price Range for the TAMO for **1 Month** is **491 – 673**.
+                * Basis the Intelligence Drawn from the ML Model and the Sentiment Analysis, We find that the Probable Range for the Market for **1 Day** is **{openValue} – {closeValue}**.
+                * At the same time, the Price Range for the HDFCBANK for **Last 1 Week** is **1633 – 1682**.
+                * And the Price Range for the HDFCBANK for **Last 1 Month** is **1615 – 1721**.
                 
                 Note: The Above ranges are calculated at 95% Confidence Level'''
                 st.markdown(results)
