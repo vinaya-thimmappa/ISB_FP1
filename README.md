@@ -2,6 +2,8 @@
 # Stock Price Prediction with Regression Model
 
 This repository contains a machine learning project for predicting stock prices using a regression model. The project includes a Streamlit application for a user-friendly frontend interface.
+## Video For Setup
+Download or run at https://drive.google.com/file/d/1R0w9HwRoj5obGkHU-kVMT0FTWCWkLrTR/view?usp=sharing -- 2 minutes video
 
 ## TODO
 Data collection automation 
