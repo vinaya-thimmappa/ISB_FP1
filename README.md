@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple steps.
 > git clone [[https://github.com/vinaya-thimmappa/ISB_FP1](https://github.com/vinaya-thimmappa/ISB_FP1) 
 2. Install required packages
 3. Run the Streamlit application locally:
-> > streamlit run app.py
+> > streamlit run group_12_frontend.py
 
 ## Model
 
