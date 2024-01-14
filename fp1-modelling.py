@@ -431,6 +431,15 @@ new.loc[(new['negative_condition']) & (new['diff'] < 0), "target"] = 0
 # Display the updated 'new' dataframe
 print(new)
 
+# Create a new DataFrame with only the 'target' column
+target_df = new[['target'].head(100)]
+
+# Save the DataFrame with only the 'target' column to a CSV file
+target_file_path = 'target_column.csv'
+target_df.to_csv(target_file_path, index=False, header=['target'])  # header=['target'] adds a header to the CSV file
+
+print(f"Target column saved to {target_file_path}")
+
 final = new[new.target.notnull()]
 
 final.head()
@@ -476,3 +485,12 @@ print("Accuracy Score: LR", accuracy_score(y_test, y_pred))
 print("Classification Report: LR")
 print(classification_report(y_test, y_pred))
 print("Cohen's Kappa Score: LR", cohen_kappa_score(y_test, y_pred))
+
+#Creating the y-test file
+target_df = new[['target']]
+target_df_100 = target_df.head(100)
+# Save the DataFrame with only the 'target' column to a CSV file
+target_file_path = 'data/ytest.csv'
+target_df_100.to_csv(target_file_path, index=False, header=['target'])  # header=['target'] adds a header to the CSV file
+
+print(f"Target column saved to {target_file_path}")
