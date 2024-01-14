@@ -433,7 +433,7 @@ new.loc[(new['negative_condition']) & (new['diff'] < 0), "target"] = 0
 print(new)
 
 # Create a new DataFrame with only the 'target' column
-target_df = new[['target'].head(100)]
+target_df = new[['target']]
 
 # Save the DataFrame with only the 'target' column to a CSV file
 target_file_path = 'target_column.csv'
