@@ -45,7 +45,16 @@ To get a local copy up and running follow these simple steps.
 > This opens chrome and runs the hdfcbank news as show in the below  image 
 <img width="933" alt="Screenshot 2024-01-14 at 12 20 32 PM" src="https://github.com/vinaya-thimmappa/ISB_FP1/assets/49150277/8f356548-d2e9-4981-ae0a-c6a12beab44c">
 
+and also this chart opens up, close this window to move forward
 
+<img width="797" alt="Screenshot 2024-01-14 at 12 26 07 PM" src="https://github.com/vinaya-thimmappa/ISB_FP1/assets/49150277/479b80c2-26fb-4f1b-9865-258e9ea486d2">
+
+This would end as below 
+<img width="1146" alt="Screenshot 2024-01-14 at 12 42 27 PM" src="https://github.com/vinaya-thimmappa/ISB_FP1/assets/49150277/14d186b9-80ae-4917-b38e-c25e43516908">
+
+data directory is populated with files 
+
+Now go to Step 3 
 
 
 3. Run the Streamlit application locally:
