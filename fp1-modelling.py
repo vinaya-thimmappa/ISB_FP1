@@ -494,3 +494,18 @@ target_file_path = 'data/ytest.csv'
 target_df_100.to_csv(target_file_path, index=False, header=['target'])  # header=['target'] adds a header to the CSV file
 
 print(f"Target column saved to {target_file_path}")
+
+
+google['sentiment'] = google['processed_headline'].apply(get_sentiment)
+
+# Create a new DataFrame with only the 'sentiment' column
+sentiment_df = google[['sentiment']]
+
+# Map sentiment values to binary values
+sentiment_df['sentiment'] = sentiment_df['sentiment'].map({'neutral': 0, 'positive': 1, 'negative': -1})
+
+# Save the DataFrame with only the 'sentiment' column to a CSV file
+sentiment_file_path = 'data/labels.csv'
+sentiment_df.to_csv(sentiment_file_path, index=False, header=['sentiment'])  # header=['sentiment'] adds a header to the CSV file
+
+print(f"Sentiment column saved to {sentiment_file_path}")
