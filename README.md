@@ -39,8 +39,14 @@ To get a local copy up and running follow these simple steps.
 > pip3 install selenium> pip3 install chrome
 > pip3 install dateparser
 > pip3 install sklearn
-> pip install textblob
-> 
+> pip3 install textblob
+> pip3 install nltk
+3. Run the python fp1-modelling.py
+> This opens chrome and runs the hdfcbank news as show in the below  image 
+<img width="933" alt="Screenshot 2024-01-14 at 12 20 32 PM" src="https://github.com/vinaya-thimmappa/ISB_FP1/assets/49150277/8f356548-d2e9-4981-ae0a-c6a12beab44c">
+
+
+
 
 3. Run the Streamlit application locally:
 > > streamlit run group_12_frontend.py
