@@ -509,3 +509,8 @@ sentiment_file_path = 'data/labels.csv'
 sentiment_df.to_csv(sentiment_file_path, index=False, header=['sentiment'])  # header=['sentiment'] adds a header to the CSV file
 
 print(f"Sentiment column saved to {sentiment_file_path}")
+
+#Storing Historical Stock Prices for HDFCBank
+historical_data_file_path = 'data/FinalDataset.csv'
+hdfc_data.to_csv(historical_data_file_path, index=False)  # header=['target'] adds a header to the CSV file
+
