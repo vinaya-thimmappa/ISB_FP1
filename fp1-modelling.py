@@ -49,6 +49,7 @@ nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('vader_lexicon')
+nltk.download('omw-1.4')
 
 """
 Scrapes Google News for headlines related to a given query.
