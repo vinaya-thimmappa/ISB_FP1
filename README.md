@@ -3,6 +3,11 @@
 
 This repository contains a machine learning project for predicting stock prices using a regression model. The project includes a Streamlit application for a user-friendly frontend interface.
 
+## TODO
+Data collection automation 
+Model running should be part of ETL Pipeline, Currently it is manually running and generates CSV Files 
+This csv file is given has input to frontend which reads and then display the needed graph 
+
 ## Project Overview
 
 The goal of this project is to use historical stock price data to predict future prices by applying regression analysis. The machine learning model is trained on features like historical prices, volume, and possibly other financial indicators.
@@ -35,6 +40,32 @@ To get a local copy up and running follow these simple steps.
 ## Model
 
 The regression model takes into account various features to predict stock prices. It can be trained on a daily, weekly, or monthly basis, and can predict next day's closing price or other future metrics.
+
+### Description
+This repository contains a Python script for predicting stock prices using a regression model. The model is designed to analyze historical price data and identify patterns that can be used to forecast future stock prices.
+
+### How It Works
+The `fp1-modelling.py` script processes historical stock data, applies a regression analysis algorithm, and outputs predictions for future stock prices. It includes data preprocessing, model training, evaluation, and prediction components.
+
+### Requirements
+- Python 3.7+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+
+Install all required packages using the following command:
+```bash
+pip install -r requirements.txt
+```
+
+> python fp1-modelling.py
+
+### Features
+- Data preprocessing and cleaning.
+- Regression analysis for prediction.
+- Evaluation of model performance.
+- Visualization of historical data and predicted prices
 
 ## Frontend
 
