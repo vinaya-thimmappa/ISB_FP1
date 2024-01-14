@@ -34,6 +34,12 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 > git clone [[https://github.com/vinaya-thimmappa/ISB_FP1](https://github.com/vinaya-thimmappa/ISB_FP1) 
 2. Install required packages
+> pip3 install yahoo_fin
+> pip3 install yfinance
+> pip3 install selenium> pip3 install chrome
+> pip3 install dateparser
+> pip3 install sklearn
+
 3. Run the Streamlit application locally:
 > > streamlit run group_12_frontend.py
 
@@ -75,6 +81,8 @@ The Streamlit application provides an interface for:
 - Displaying the predicted stock prices.
 - Customizing the inputs for different stocks and timeframes.
 - New Associated with Stock Price 
+
+
 
 
 ## Contributing
