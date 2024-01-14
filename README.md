@@ -34,13 +34,13 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 > git clone [[https://github.com/vinaya-thimmappa/ISB_FP1](https://github.com/vinaya-thimmappa/ISB_FP1) 
 2. Install required packages
-> pip3 install yahoo_fin
-> pip3 install yfinance
-> pip3 install selenium> pip3 install chrome
-> pip3 install dateparser
-> pip3 install sklearn
-> pip3 install textblob
-> pip3 install nltk
+> - pip3 install yahoo_fin
+> - pip3 install yfinance
+> - pip3 install selenium> pip3 install chrome
+> - pip3 install dateparser
+> - pip3 install sklearn
+> - pip3 install textblob
+> - pip3 install nltk
 3. Run the python fp1-modelling.py
 > This opens chrome and runs the hdfcbank news as show in the below  image 
 <img width="933" alt="Screenshot 2024-01-14 at 12 20 32 PM" src="https://github.com/vinaya-thimmappa/ISB_FP1/assets/49150277/8f356548-d2e9-4981-ae0a-c6a12beab44c">
@@ -52,7 +52,8 @@ and also this chart opens up, close this window to move forward
 This would end as below 
 <img width="1146" alt="Screenshot 2024-01-14 at 12 42 27 PM" src="https://github.com/vinaya-thimmappa/ISB_FP1/assets/49150277/14d186b9-80ae-4917-b38e-c25e43516908">
 
-data directory is populated with files 
+data directory is populated with files as shown below 
+<img width="697" alt="Screenshot 2024-01-14 at 8 43 29 PM" src="https://github.com/vinaya-thimmappa/ISB_FP1/assets/49150277/8475d7d4-b503-4ec2-83f6-0f3666306020">
 
 Now go to Step 3 
 
