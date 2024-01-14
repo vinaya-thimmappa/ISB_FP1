@@ -39,6 +39,8 @@ To get a local copy up and running follow these simple steps.
 > pip3 install selenium> pip3 install chrome
 > pip3 install dateparser
 > pip3 install sklearn
+> pip install textblob
+> 
 
 3. Run the Streamlit application locally:
 > > streamlit run group_12_frontend.py
