@@ -278,7 +278,7 @@ final["Polarity"] = final.processed_headline.apply(Polarity)
 
 final.processed_headline.value_counts()[:5]
 
-final.to_csv("FinalHeadlines.csv", index = False)
+final.to_csv("data/FinalHeadlines.csv", index = False)
 
 modelling_data = final.drop(['Headline', "Timestamp", "processed_headline"], axis = 1)
 
